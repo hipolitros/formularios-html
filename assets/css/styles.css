@@ -21,5 +21,14 @@ input {
 }
 
 input, textarea {
-    border-radius: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"], input[type="email"] {
+    padding: 10px;
+}
+
+input[type="submit"] {
+    width: 180px;
 }
