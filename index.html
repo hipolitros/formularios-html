@@ -15,13 +15,14 @@
 </header>
 <main>
     <form>
-        <label>Nome completo*:</label>
-        <input type="text" name="nome_completo" id="nome_completo" maxlength="80">
-        <label>Seu e-mail*:</label>
-        <input type="email" name="seu_email" id="seu_email" maxlength="40">
-        <label>Mensagem*:</label>
-        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+        <label for="nome_completo">Nome completo*:</label>
+        <input type="text" name="nome_completo" id="nome_completo" title="Nome completo" placeholder="Digite seu nome completo..." required maxlength="40">
+        <label for="seu_email">Seu e-mail*:</label>
+        <input type="email" name="seu_email" id="seu_email" placeholder="Digite seu e-mail..." required pattern="\S+@\S+\.\S+">
+        <label for="mensagem">Mensagem*:</label>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Escreva algo..."></textarea>
         <input type="submit" value="Enviar Mensagem">
+        <input type="reset" value="Limpar">
     </form>
 </main>
 <footer>

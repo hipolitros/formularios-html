@@ -8,8 +8,8 @@ form {
     margin: 20px auto;
 }
 
-input, label {
-    font-family: 'Helvetica Neue','Helvetica','Arial','Sans Serif';
+input, label, textarea {
+    font-family: 'Helvetica Neue',Helvetica,Arial,'Sans Serif';
     font-size: 20px;
 }
 
@@ -20,15 +20,20 @@ input {
     margin-top: 5px;
 }
 
+input:invalid:not(:placeholder-shown) {
+    border: 1px solid red;
+}
+
 input, textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-input[type="text"], input[type="email"] {
+input[type="text"], input[type="email"], textarea {
     padding: 10px;
 }
 
-input[type="submit"] {
+input[type="submit"], input[type="reset"] {
     width: 180px;
 }
+
